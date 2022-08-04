@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ActivityLifecycle/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ActivityLifecycle/app/src/main/res/layout/activity_main_relative_layout.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ActivityLifecycle/app/src/main/res/layout/activity_new.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ActivityLifecycle/app/src/main/res/layout/activity_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ActivityLifecycle/app/src/main/res/layout/facebook.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ActivityLifecycle/app/src/main/res/layout/fb.xml" value="0.7571428571428571" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/ActivityLifecycle/app/src/main/res/layout/scrollview_example.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fb.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
