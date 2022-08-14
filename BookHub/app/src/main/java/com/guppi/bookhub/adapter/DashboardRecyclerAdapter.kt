@@ -1,13 +1,16 @@
 package com.guppi.bookhub.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.guppi.bookhub.R
+import com.guppi.bookhub.activity.DescriptionActivity
 import com.guppi.bookhub.model.Book
+import com.squareup.picasso.Picasso
 
 
 class DashboardRecyclerAdapter(val context:Context, val itemList: ArrayList<Book>):RecyclerView.Adapter<DashboardRecyclerAdapter.DashboardViewHolder>() {
@@ -29,14 +32,16 @@ class DashboardRecyclerAdapter(val context:Context, val itemList: ArrayList<Book
         val book =itemList[position]
         holder.txtBookName.text=book.bookName
         holder.txtBookAuthor.text=book.bookAuthor
-        holder.txtBookPrice.text=book.bookCost
+        holder.txtBookPrice.text=book.bookPrice
         holder.txtBookRating.text=book.bookRating
-        holder.imgBookImage.setImageResource(book.bookImage)
+//        holder.imgBookImage.setImageResource(book.bookImage)
+        Picasso.get().load(book.bookImage).error(R.drawable.default_book_cover).into(holder.imgBookImage)
 
         holder.l_content.setOnClickListener {
-            Toast.makeText(context, "Clicked on ${holder.txtBookName.text}", Toast.LENGTH_SHORT).show()
-
-        }
+          val intent= Intent(context,DescriptionActivity::class.java)
+          intent.putExtra("book_id",book.bookId)
+            context.startActivity(intent)
+          }
     }
 
 
